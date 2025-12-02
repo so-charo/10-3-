@@ -162,8 +162,8 @@
         timeEl.textContent = formatTime(elapsedMs);
 
         // 5秒以降、6.5秒までかけて透明に
-        if (elapsedSec > 5) {
-          const t = Math.min((elapsedSec - 5) / 1.5, 1); // 0〜1
+        if (elapsedSec > 3) {
+          const t = Math.min((elapsedSec - 3) / 2, 1); // 0〜1
           const opacity = 1 - t;                         // 1→0
           timeEl.style.opacity = opacity.toFixed(2);
         } else {
