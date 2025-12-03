@@ -149,7 +149,7 @@
         timeEl.textContent = formatTime(elapsedMs);
 
         if (elapsedSec > 3) {
-          const t = Math.min((elapsedSec - 3) / 2, 1);
+          const t = Math.min((elapsedSec - 3) / 1.5, 1);
           timeEl.style.opacity = (1 - t).toFixed(2);
         } else {
           timeEl.style.opacity = "1";
